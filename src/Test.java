@@ -11,5 +11,7 @@ public class Test {
         System.out.println(s2.indexOf(s1));
         System.out.println("mastermastermaster");
         System.out.println("ddddddddddddddddddddddddddd");
+        System.out.println("测试stash");
+
     }
 }
