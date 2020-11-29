@@ -13,6 +13,7 @@ public class Test {
         System.out.println("ddddddddddddddddddddddddddd");
         System.out.println("测试stash");
         System.out.println("111111111111111111111111111111111111111");
+        System.out.println(22222222);
 
     }
 }
