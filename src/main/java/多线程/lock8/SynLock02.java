@@ -12,7 +12,7 @@ public class SynLock02 {
     public static void main(String[] args) {
         Phone1 p=new Phone1();
         Phone1 p1=new Phone1();
-        //new Thread(()->p.SendSms(),"A").start();
+        new Thread(()->p.SendSms(),"A").start();
         new Thread(()->p.call(),"B").start();
         new Thread(()->p1.sayHello(),"C").start();
     }

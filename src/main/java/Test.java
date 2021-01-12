@@ -1,3 +1,4 @@
+import javax.management.relation.RoleList;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
@@ -40,7 +41,9 @@ public class Test {
 
 
     }
+
     public static void test01(int num){
+        ArrayList arr=new ArrayList();
         if(num>99){
             return;
         }

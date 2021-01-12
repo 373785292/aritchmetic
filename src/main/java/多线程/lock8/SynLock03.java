@@ -13,11 +13,7 @@ public class SynLock03 {
         Phone3 p=new Phone3();
         Phone3 p1=new Phone3();
         new Thread(()->p.SendSms(),"A").start();
-        try {
-            TimeUnit.SECONDS.sleep(1);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         new Thread(()->p1.call(),"B").start();
     }
 }
@@ -29,6 +25,11 @@ class Phone3{
     }
 
     public synchronized void SendSms(){
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         System.out.println("我会发短信");
     }
 }
